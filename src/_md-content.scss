@@ -47,17 +47,23 @@
         }
     }
 
-    h1 { @include util-header('H1', 175%); }
+    h1 { @include util-header('H1', 175%);
+        color: #e0e087; /*dark theme for h1*/}
 
-    h2 { @include util-header('H2', 150%); }
+    h2 { @include util-header('H2', 150%);
+        color: #d7d78d; /*dark theme for h2*/}
 
-    h3 { @include util-header('H3', 140%); }
+    h3 { @include util-header('H3', 140%);
+        color: #d0d094; /*dark theme for h3*/}
 
-    h4 { @include util-header('H4', 130%); }
+    h4 { @include util-header('H4', 130%);
+        color: #c8c89b; /*dark theme for h4*/}
 
-    h5 { @include util-header('H5', 120%); }
+    h5 { @include util-header('H5', 120%);
+        color: #c1c1a3; /*dark theme for h5*/}
 
-    h6 { @include util-header('H6', 110%); }
+    h6 { @include util-header('H6', 110%);
+        color: #b8b8a9; /*dark theme for h6*/}
 
     blockquote {
         margin: $basic-font-size * 0.7 0px;
@@ -67,7 +73,7 @@
     code {
         font-family: 'Oxygen Mono', monospace;
         font-size: 85%;
-        color: #F57C00; // mdl orange 700
+        color: #FFA000; // dark theme mdl-color--amber-700
     }
 
     table {
@@ -129,7 +135,7 @@
 
             div.linenodiv {
                 pre {
-                    color: #ddd;
+                    color: #90b2bd; // dark theme
                     background-color: $bg-color;
                     font-size: 80%;
                     vertical-align: middle;
@@ -150,13 +156,13 @@
                 // border: 1px solid #ccc;
                 // border will overlap scrollbar, so I use outline instead
                 outline: 1px solid #a8a8a8;
-                background-color: #fff;
+                background-color: #b3c59e; // dark theme
             }
         }
     }
 
     // footnote
-    a.footnote-ref{
+    a.footnote-ref {
         vertical-align: super;
         text-decoration: none;
         font-size: 95%;
@@ -166,4 +172,5 @@
         margin: 24px 0px;
         border-color: rgba(255, 255, 255, 0.4);
     }
+
 }
