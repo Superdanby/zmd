@@ -21,3 +21,7 @@ Since the dark theme branch of [zmd](https://github.com/amoshyc/zmd) is deprecat
 ## Problem Report
 
 For any issue unrelated to dark theme, please [report it here](https://github.com/amoshyc/zmd/issues).
+
+## Light Theme Support
+
+[zmd](https://github.com/amoshyc/zmd)
