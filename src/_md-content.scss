@@ -78,7 +78,9 @@
     }
 
     strong, b, i, em {
-        color: #b7afc5;
+        :not(a){
+            color: #b7afc5;
+        }
     }
 
     table {
@@ -105,19 +107,12 @@
         }
 
         tbody {
+            color: #b6b6a9;
             tr:nth-child(odd) {
-                color: #b6b6a9;
                 background-color: #525252;
-                code {
-                    color: #e27d00; // dark theme mdl-color--amber-700
-                }
             }
             tr:nth-child(even) {
-                color: #b6b6a9;
                 background-color: #4b4b4b;
-                code {
-                    color: #e27d00; // dark theme mdl-color--amber-700
-                }
             }
         }
     }
