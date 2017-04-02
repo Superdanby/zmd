@@ -20,3 +20,7 @@ Was merged into [zmd](https://github.com/amoshyc/zmd) on 29/3/2017.
 ## Problem Report
 
 For any issue unrelated to Markdown style, please [report it here](https://github.com/amoshyc/zmd/issues).
+
+## Dark Theme Edition
+
+[zmdak](https://github.com/Superdanby/zmd/tree/dark)
