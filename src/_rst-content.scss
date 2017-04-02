@@ -43,6 +43,10 @@
         &:hover {
             color: lighten($primary-color, 10%);
         }
+
+        strong, b, i, em {
+            color: $primary-color;
+        }
     }
 
     ol, ul {
@@ -65,17 +69,23 @@
         }
     }
 
-    h1 { @include util-header('H1', 175%); }
+    h1 { @include util-header('H1', 175%);
+        color: #ffdd67; /*dark theme for h1*/}
 
-    h2 { @include util-header('H2', 150%); }
+    h2 { @include util-header('H2', 150%);
+        color: #f1d674; /*dark theme for h2*/}
 
-    h3 { @include util-header('H3', 140%); }
+    h3 { @include util-header('H3', 140%);
+        color: #e3cf81; /*dark theme for h3*/}
 
-    h4 { @include util-header('H4', 130%); }
+    h4 { @include util-header('H4', 130%);
+        color: #d5c88e; /*dark theme for h4*/}
 
-    h5 { @include util-header('H5', 120%); }
+    h5 { @include util-header('H5', 120%);
+        color: #c7c1a5; /*dark theme for h5*/}
 
-    h6 { @include util-header('H6', 110%); }
+    h6 { @include util-header('H6', 110%);
+        color: #b8b8a9; /*dark theme for h6*/}
 
     tt { // inline literal
         padding-left: 5px;
@@ -117,6 +127,10 @@
         padding-left: 2 * $basic-font-size;
     }
 
+    strong, b, i, em {
+        color: #b7afc5;
+    }
+
     table {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -124,25 +138,36 @@
         font-size: 100%;
 
         th, td {
-            border: 1px solid #ccc;
+            border: 1px solid #776b46;
             padding: 10px;
             text-align: left;
         }
 
         tbody {
-            border-top: 2px double #ccc;
+            border-top: 2px double #776b46; // mdl-color--purple-900
         }
 
         thead {
             tr {
                 color: black;
-                background-color: $bg-color;
+                background-color: #9ab779;
             }
         }
 
         tbody {
             tr:nth-child(odd) {
-                background-color: #f4f4f4;
+                color: #b6b6a9;
+                background-color: #525252;
+                code {
+                    color: #e27d00; // dark theme mdl-color--amber-700
+                }
+            }
+            tr:nth-child(even) {
+                color: #b6b6a9;
+                background-color: #4b4b4b;
+                code {
+                    color: #e27d00; // dark theme mdl-color--amber-700
+                }
             }
         }
     }
@@ -222,10 +247,13 @@
         tbody {
             border: none;
         }
+        span.option {
+            color: #e27d00;
+        }
     }
 
     a.toc-backref {
-        color: $fg-color;
+        color: #ffdd67;
         text-decoration: none;
     }
 
@@ -307,29 +335,29 @@
 
     .attention, .caution, .warning {
         .admonition-title {
-            background-color: #FFC107;
-            border: 1px solid #FFC107;
+            background-color: #ffb300; // mdl-color-amber--600
+            border: 1px solid #ffc107; // mdl-color-amber--500
         }
     }
 
     .danger, .error {
         .admonition-title {
-            background-color: #f44336;
-            border: 1px solid #f44336;
+            background-color: #e53935; // mdl-color-red--600
+            border: 1px solid #f44336; // mdl-color-red--500
         }
     }
 
     .note, .tip, .hint {
         .admonition-title {
-            background-color: #64B5F6;
-            border: 1px solid #64B5F6;
+            background-color: #039be5; // mdl-color-light-blue--600
+            border: 1px solid #64b5f6; // mdl-color-blue--300
         }
     }
 
     .important {
         .admonition-title {
-            background-color: #009688;
-            border: 1px solid #009688;
+            background-color: #009688; // mdl-color-teal--500
+            border: 1px solid #009688; // mdl-color-teal--500
         }
     }
 
