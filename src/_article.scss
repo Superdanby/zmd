@@ -3,7 +3,6 @@
     font-size: $basic-font-size;
 
     .title {
-        color: #e0e087; //dark theme for H1
         margin: 0px 0px;
         @include util-header('H1', 175%);
         line-height: $basic-font-size * 3.0;

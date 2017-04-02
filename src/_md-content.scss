@@ -48,19 +48,19 @@
     }
 
     h1 { @include util-header('H1', 175%);
-        color: #e0e087; /*dark theme for h1*/}
+        color: #ffdd67; /*dark theme for h1*/}
 
     h2 { @include util-header('H2', 150%);
-        color: #d7d78d; /*dark theme for h2*/}
+        color: #f1d674; /*dark theme for h2*/}
 
     h3 { @include util-header('H3', 140%);
-        color: #d0d094; /*dark theme for h3*/}
+        color: #e3cf81; /*dark theme for h3*/}
 
     h4 { @include util-header('H4', 130%);
-        color: #c8c89b; /*dark theme for h4*/}
+        color: #d5c88e; /*dark theme for h4*/}
 
     h5 { @include util-header('H5', 120%);
-        color: #c1c1a3; /*dark theme for h5*/}
+        color: #c7c1a5; /*dark theme for h5*/}
 
     h6 { @include util-header('H6', 110%);
         color: #b8b8a9; /*dark theme for h6*/}
@@ -83,25 +83,36 @@
         font-size: 100%;
 
         th, td {
-            border: 1px solid #ccc;
+            border: 1px solid #776b46;
             padding: 10px;
             text-align: left;
         }
 
         tbody {
-            border-top: 2px double #ccc;
+            border-top: 2px double #776b46; // mdl-color--purple-900
         }
 
         thead {
             tr {
                 color: black;
-                background-color: $bg-color;
+                background-color: #9ab779;
             }
         }
 
         tbody {
             tr:nth-child(odd) {
-                background-color: #f4f4f4;
+                color: #b6b6a9;
+                background-color: #525252;
+                code {
+                    color: #e27d00; // dark theme mdl-color--amber-700
+                }
+            }
+            tr:nth-child(even) {
+                color: #b6b6a9;
+                background-color: #4b4b4b;
+                code {
+                    color: #e27d00; // dark theme mdl-color--amber-700
+                }
             }
         }
     }
@@ -153,6 +164,7 @@
                 max-width: $max-width;
                 min-width: $max-width;
                 overflow-x: auto;
+                color: #303334;
                 // border: 1px solid #ccc;
                 // border will overlap scrollbar, so I use outline instead
                 outline: 1px solid #a8a8a8;
